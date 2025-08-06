@@ -1,0 +1,45 @@
+:host {
+    --color-fg-primary: #1e84fe;
+    --color-fg-accent: #ff8c32;
+    --color-fg-muted: #6a7283;
+}
+.calendar > .days-grid > .day.today {
+    font-weight: bold;
+}
+.calendar > .header {
+    padding: 0;
+}
+.calendar > .daynames-row > .dayname {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container.amp-plugin .calendars .calendar > .header .month-name {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.container.amp-plugin .calendars .calendar > .header .month-name select {
+    padding: 0;
+}
+.calendar > .days-grid > .day {
+    color: #1d2635;
+    cursor: pointer;
+}
+.container.right-aligned {
+    left: auto !important;
+    right: 0;
+}
+html[dir="rtl"] .previous-button.unit,
+html[dir="rtl"] .next-button.unit{
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+@media (max-width: 899px) {
+    .container.md-ltr-right-aligned {
+        left: auto !important;
+        right: 0;
+    }
+}
